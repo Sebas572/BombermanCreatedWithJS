@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+	<title>Bomberman</title>
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="Avisos">
+		<br><br>
+		<p class="RazonDelAviso"></p>
+	</div>
+	<div class="Usuario"><p class="Name"></p></div>
+	<div class="Configurar">
+		<div class="Cerrar">
+			<p>x</p>
+		</div>
+		<p>Configuraciones</p>
+		<hr />
+		<form action="">
+			<div class="Lista TeclasConfig">
+				<div>
+					<input type="text" placeholder="Nombre" value="a"style="width: 200px;" id="Nombre" maxlength="10" required />
+					<p>Nombre</p>
+				</div>
+				<div>
+					<select id="Graficos">
+						<option>low</option>
+						<option>medium</option>
+						<option>high</option>
+					</select>
+					<p>Graficos Rapido</p>
+				</div>
+				<div>
+					<input type="text" placeholder="Left" value="a" id="Left" required />
+					<p>Izquierda</p>
+				</div>
+				<div>
+					<input type="text" placeholder="Right" value="d" id="Right" required />
+					<p>Derecha</p>
+				</div>
+				<div>
+					<input type="text" placeholder="Up" value="w" id="Up" required />
+					<p>Arriba</p>
+				</div>
+				<div>
+					<input type="text" placeholder="Down" value="s" id="Down" required />
+					<p>Abajo</p>
+				</div>
+				<div>
+					<input type="text" placeholder="Bomb" value="e" id="Bomb" required />
+					<p style="margin-top: 15px;">Bomba</p>
+				</div>
+				<div>
+					<input type="text" placeholder="AccesGraf" value="m" id="AccesGraf" required />
+					<p style="margin-top: 15px;">Graficos Rapido</p>
+				</div>
+			</div>
+			<input class="AceptarConfig" type="Submit" value="Aceptar" onclick="SaveControls();">
+		</form>
+	</div>
+
+	<div class="Tablas">
+		<div class="Cerrar">
+			<p>x</p>
+		</div>
+		<p>Servidores</p>
+		<hr />
+		<div class="Lista Servidores">
+			<div>
+				<p>1</p>
+				<font>Servidor creado por: </font>
+			</div>
+		</div>
+	</div>
+
+	<div class="NombreDelServidor">
+		<div class="Cerrar">
+			<p>x<p>
+		</div>
+		<p>¿Como quieres que se llame tu servidor?</p>
+		<input type="text" placeholder="Nombre Del Servidor" id="NameServis"/>
+		<div class="Aceptar"><p>Aceptar</p></div>
+	</div>
+
+
+	<div class="Contenedor">
+		<div class="Boton Crear">
+			<p>
+				Crear
+			</p>
+		</div>
+		<div class="Boton Unirse">
+			<p>
+				Unirse
+			</p>
+		</div>
+	</div>
+	<div class="Configuracion">
+		<p>
+			Configurar
+		</p>
+	</div>
+
+	<div class="Levels"><p>Xp</p><progress value="70" max="100"></progress></div>
+	<div class="AvisarDelServidorExiste">
+		<p class="EscribirNotificacion">El servidor ya existe</p>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+	<script type="text/javascript" src="css/Service.js"></script>
+	<script type="text/javascript" src="css/Interfaz.js"></script>
+</body>
+</html>
